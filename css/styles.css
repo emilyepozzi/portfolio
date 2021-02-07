@@ -1,9 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
 margin: 0;
 text-align: center;
 font-family: "Merriweather", serif;
 color: #40514e;
 }
+
+/* HEADER / NAV BAR STYLES START */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  background-color:#e8ffff;
+}
+
+header a {
+text-decoration: none;
+
+}
+
+header nav {
+display: flex;
+flex-wrap: wrap;
+position: relative;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  color: #66BFBF;  
+}
+
+
+
+
+
+
+
+
+
+/* hero / top container */
+.hero {
+  background-image: url('../images/light-blue-background-color.png');
+ height: 600px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 8%;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+ 
+  
+}
+
+
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.hero-form .sun {
+padding: 5px;
+width: 80%;
+margin-left: 10%;
+}
+
+
+
+.hero h2 {
+
+font-family: 'Montserrat', sans-serif;
+font-size: 1.8rem;
+color: #66BFBF;
+font-weight: normal;
+line-height: 2;
+padding: 5%;
+}
+
+/* end hero / top container */
 
 
 h1{
@@ -15,12 +105,7 @@ font-family: 'Sacramento', cursive;
 }
 
 h2{
-font-family: 'Montserrat', sans-serif;
-font-size: 1.8rem;
-color: #66BFBF;
-font-weight: normal;
-line-height: 2;
-padding: 10px;
+
 }
 
 h3{
@@ -42,20 +127,10 @@ width: 8%;
 margin: 100px auto 100px auto;
 }
 
-.top-container{
-background-color: #e8ffff;
-position: relative;
-padding-top: 100px;
 
-}
 
 .middle-container{
 margin: 100px 0;
-}
-
-.bottom-container{
-background-color: #65BFBF;
-padding: 50px 0 20px;
 }
 
 .skill-row{
@@ -74,15 +149,6 @@ width: 40%;
 margin: 40px auto 60px;
 }
 
-.copyright{
-color: #eaf6f6;
-font-size: 0.75rem;
-padding: 20px 0;
-}
-
-.footer-link{
-  color: #11999E;
-}
 
 .emily-pozzi-pic {
   position: relative;
@@ -98,7 +164,7 @@ padding-top: 30px;
 
 }
 
-a{
+a {
 color: #11999e;
 font-family: 'Montserrat', sans-serif;
 margin: 10px 20px;
@@ -139,3 +205,21 @@ color: #eaf6f6;
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
+footer {
+    background-color: #65BFBF;
+    height: 50px;
+    width: auto;
+}
+
+.copyright{
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  }
+  
+  
+  
+  .footer-link{
+    color: #11999E;
+  }
