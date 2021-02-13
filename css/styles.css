@@ -141,16 +141,21 @@ a {
   }
 
   /* my work */
+main h2 {
+  padding-bottom: 50px;
+}
+
   .work {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   }
 
   .flex-item {
     background-size: cover;
     background-position: center;
     padding: 20px 0;
+    width: 50%;
   }
 
   .work img {
@@ -165,6 +170,22 @@ a {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  }
+
+  /* contact */
+.contact-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.contact-flex {
+  padding: 20px 0;
+}
+
+
+  article h2 {
+    padding-bottom: 30px;
   }
 
   /* footer */
@@ -185,15 +206,73 @@ a {
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
   
+    .flex-item {
+      background-size: cover;
+      background-position: center;
+      padding: 30px 0;
+      width: 90%;
+    }
+  
+    .work img {
+      border-radius: 20px;
+      opacity: 90%;
+      width: 45%;
+      min-height: 180px;
+      border: 1px solid black;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
   
+    .flex-item {
+      background-size: cover;
+      background-position: center;
+      padding: 30px 0;
+      width: 100%;
+    }
+  
+    .work img {
+      border-radius: 20px;
+      opacity: 80%;
+      min-height: 180px;
+      border: 1px solid black;
+    }
 }
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
   
+    .flex-item {
+      background-size: cover;
+      background-position: center;
+      padding: 30px 0;
+      width: 90%;
+    }
+  
+    .work img {
+      border-radius: 20px;
+      opacity: 90%;
+      width: 45%;
+      min-height: 180px;
+      border: 1px solid black;
+    }
 }
+
