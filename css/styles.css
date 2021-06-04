@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,31 +14,27 @@ color: #40514e;
 
 /* header / nav bar */
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  position: sticky;
-  top: 0;
   background-color:#e8ffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 header a {
 text-decoration: none;
-
+color: #66BFBF;  
+font-size: 20px;
 }
 
 header nav {
-display: flex;
-flex-wrap: wrap;
-position: relative;
+margin: 7px 25px;
 }
 
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
-  color: #66BFBF;  
   padding: 20px 20px 0;
   margin-bottom: 20px ;
 }
@@ -134,7 +131,6 @@ width: 200px;
 }
 
 a {
-  color: #11999e;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
@@ -206,7 +202,7 @@ main h2 {
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  .work {
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -230,6 +226,14 @@ main h2 {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+  }
+
+
   .work {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +258,10 @@ main h2 {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  header a {
+    font-size: 30px;
+    }
+
   .work {
     display: flex;
     flex-wrap: wrap;
